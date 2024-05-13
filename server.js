@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/bmicalculator.html");
 });
 
-app.post("/bmicalculator", (req, res) => {
+app.post("/", (req, res) => {
   var height = parseFloat(req.body.height);
   var weight = parseFloat(req.body.weight);
   var bmi = weight / Math.pow(height, 2);
